@@ -1,3 +1,5 @@
+[back to main page](./)
+
 # Installation
 
 Download the latest version and double click the file `polCAM.mlappinstall`. Follow the MATLAB app installation instructions. If installation is successful, a new icon should pop up under the 'APPS' tab in MATLAB.
