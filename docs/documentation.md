@@ -3,4 +3,4 @@
 
 _yay_
 
-[Back to main page](./)
+[back to main page](./)
