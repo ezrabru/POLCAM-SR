@@ -1,7 +1,6 @@
+[back to main page](./)
 
 ## Documentation
-
-[back to main page](./)
 
 Watch a [video tutorial](https://ezrabru.github.io/polCAM/) to get an overview of the software or refer to the documentation:
 
