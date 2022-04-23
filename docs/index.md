@@ -9,8 +9,6 @@
 6. [FAQs](./faq.md)
 7. [People](./people.md)
 
-![Image](src)
-
 If you use polCAM software in your work, please cite us:\
 [Link to manuscript]()\
 Citation...
