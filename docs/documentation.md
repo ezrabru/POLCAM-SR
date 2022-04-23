@@ -1,10 +1,6 @@
 
----
-layout: default
----
-
-## Welcome to another page
+## Documentation
 
 _yay_
 
-[back](./)
+[Back to main page](./)
