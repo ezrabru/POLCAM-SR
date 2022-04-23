@@ -1,7 +1,7 @@
 polCAM is a MATLAB application that can be used to process, analyse and display polarisation camera image data. It can be used to analyse single-molecule orientation lcoalisation microscopy (SMOLM) data as well as diffraction limited image data.
 
-[Installation instructions](./installation.md).
-[Documentation](./documentation.md).
+- [Installation instructions](./installation.md)
+- [Documentation](./documentation.md)
 
 
 
