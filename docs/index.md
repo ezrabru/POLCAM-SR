@@ -9,7 +9,7 @@ Download the latest version and double click the file `polCAM.mlappinstall`. Fol
 
 # Documentation
 
-[Link to another page](./Documentation.html).
+[Link to another page](./documentation.html).
 
 Watch a video tutorial to get an overview of the software or refer to the documentation:
 
