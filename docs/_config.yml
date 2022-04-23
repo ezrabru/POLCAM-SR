@@ -2,3 +2,5 @@ theme: jekyll-theme-dinky
 
 title: [polCAM]
 description: [Software to process, analyse and display polarisation camera data.]
+
+show_downloads: true
