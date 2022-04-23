@@ -2,11 +2,14 @@ polCAM is a MATLAB application that can be used to process, analyse and display 
 
 It requires a MATLAB installation (tested with version R_2021b) and an active MATLAB license. The following toolboxes are required: ... . The following toolboxes are optional: Parallel processing toolbox.
 
+
 # Installation
 
 Download the latest version and double click the file `polCAM.mlappinstall`. Follow the MATLAB app installation instructions. If installation is successful, a new icon should pop up under the 'APPS' tab in MATLAB.
 
 # Documentation
+
+[Link to another page](./Documentation.html).
 
 Watch a video tutorial to get an overview of the software or refer to the documentation:
 
