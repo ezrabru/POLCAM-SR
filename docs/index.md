@@ -1,6 +1,10 @@
-### Markdown
+polCAM is a MATLAB application to process, analyse and display polarisation camera image data. It can be used to analyse single-molecule orientation lcoalisation microscopy (SMOLM) data as well as diffraction limited image data.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Installation
+
+# Documentation
+
+
 
 ```markdown
 Syntax highlighted code block
