@@ -78,6 +78,11 @@ switch columnName
         binEdges = 0:max(data(:))/100:max(data(:));
         histogram(data,binEdges,'FaceColor',facecolor,'EdgeColor','none','FaceAlpha',1);
         xlabel('Uncertainty xy (nm)');
+    case 'Angle gaussian'
+        data = locData.angleGaus*180/pi; data = data(keep);
+        binEdges = -90:2:90;
+        histogram(data,binEdges,'FaceColor',facecolor,'EdgeColor','none','FaceAlpha',1);
+        xlabel('Angle rotated asym gaussian (deg.)');
 end
 
 xlim([-inf inf]);

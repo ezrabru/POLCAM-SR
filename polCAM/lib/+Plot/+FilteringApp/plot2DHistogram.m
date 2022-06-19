@@ -76,6 +76,11 @@ switch columnName1
         data1 = data1(keep);
         nameParam1 = 'Thompson uncertainty xy (nm)';
         xEdges = 0:max(data1(:))/100:max(data1(:));
+    case 'Angle gaussian'
+        data1 = locData.angleGaus*180/pi;
+        data1 = data1(keep);
+        nameParam1 = 'Angle rotated asym gaussian (deg.)';
+        xEdges = -90:2:90;
 end
 
 switch columnName2
@@ -147,6 +152,11 @@ switch columnName2
         data2 = data2(keep);
         nameParam2 = 'Thompson uncertainty xy (nm)';
         yEdges = 0:max(data2(:))/100:max(data2(:));
+    case 'Angle gaussian'
+        data2 = locData.angleGaus*180/pi;
+        data2 = data2(keep);
+        nameParam2 = 'Angle rotated asym gaussian (deg.)';
+        yEdges = -90:2:90;
 end
 
 histogram2(data1,data2,xEdges,yEdges,'DisplayStyle','tile')%,'ShowEmptyBins','on')

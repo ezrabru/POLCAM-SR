@@ -67,6 +67,13 @@ switch columnName
         scatter(y,x,ms,data,'.');
         caxis([prctile(data,1) prctile(data,99)])
         c = colorbar; c.Label.String = 'Thompson uncertainty xy (nm)';
+    case 'Angle gaussian'
+        data = locData.angleGaus*180/pi; data = data(keep);
+        mcol = hsv(180+1);
+        mcol = mcol(ceil(90+data),:);
+        scatter(y,x,ms,mcol,'.');
+        c = colorbar; colormap("hsv"); caxis([-90 90]); c.Ticks = -90:30:90;
+        c.Label.String = 'Angle rotated asym gaussian (deg.)';
 end
 
 % communal figure settings

@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1557755322" file="C:\Users\ezrab\Documents\GitHub\polCAM\polCAM\polCAM.prj" location="C:\Users\ezrab\Documents\GitHub\polCAM\polCAM" name="polCAM" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2249177771" file="C:\Users\ezrab\Documents\GitHub\polCAM\polCAM\polCAM.prj" location="C:\Users\ezrab\Documents\GitHub\polCAM\polCAM" name="polCAM" target="target.mlapps" target-name="Package App">
     <param.appname>polCAM</param.appname>
     <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
     <param.email>eb758@cam.ac.uk</param.email>
@@ -12,7 +12,7 @@
     </param.icons>
     <param.summary />
     <param.description />
-    <param.screenshot>C:\Users\ezrab\AppData\Local\Temp\tpfcb670ba_15a8_4470_a625_e53ebe0afb37.png</param.screenshot>
+    <param.screenshot>C:\Users\ezrab\AppData\Local\Temp\tpd1bd5bcd_458e_45f6_a9a9_43a58ba48061.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -54,12 +54,12 @@
       <file>${PROJECT_ROOT}\lib\+Utils\getAverageIntensityProjectionFromPath.m</file>
       <file>${PROJECT_ROOT}\lib\+Utils\getMaximumIntensityProjectionFromPath.m</file>
       <file>${PROJECT_ROOT}\lib\+Utils\getMinimumIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}\lib\+Utils\getOrderedImageFilelist.m</file>
       <file>${PROJECT_ROOT}\lib\+Utils\getSumIntensityProjectionFromPath.m</file>
-      <file>G:\Shared drives\LeeLab Hard Drive Backups\Data\Ezra\Projects\Single-molecule orientation localisation microscopy using a polarisation camera\Manuscript\Data\20201210_immobilised AF647 in PVA\code\lib\+Utils\getOrderedImageFilelist.m</file>
-      <file>G:\Shared drives\LeeLab Hard Drive Backups\Data\Ezra\Projects\Single-molecule orientation localisation microscopy using a polarisation camera\Manuscript\Data\20201210_immobilised AF647 in PVA\code\lib\+Utils\readTiffStack.m</file>
-      <file>G:\Shared drives\LeeLab Hard Drive Backups\Data\Ezra\Projects\Single-molecule orientation localisation microscopy using a polarisation camera\Manuscript\Data\20201210_immobilised AF647 in PVA\code\lib\Camera.m</file>
-      <file>G:\Shared drives\LeeLab Hard Drive Backups\Data\Ezra\Projects\Single-molecule orientation localisation microscopy using a polarisation camera\Manuscript\Data\20201210_immobilised AF647 in PVA\code\lib\Microscope.m</file>
-      <file>G:\Shared drives\LeeLab Hard Drive Backups\Data\Ezra\Projects\Single-molecule orientation localisation microscopy using a polarisation camera\Manuscript\Data\20201210_immobilised AF647 in PVA\code\lib\Process.m</file>
+      <file>${PROJECT_ROOT}\lib\+Utils\readTiffStack.m</file>
+      <file>${PROJECT_ROOT}\lib\Camera.m</file>
+      <file>${PROJECT_ROOT}\lib\Microscope.m</file>
+      <file>${PROJECT_ROOT}\lib\Process.m</file>
     </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\docs</file>

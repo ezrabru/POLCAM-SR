@@ -417,20 +417,22 @@ classdef Process
                         locs(i).photons = (2*pi*params.amplitude.*params.sigmax.*params.sigmay)/2;
                         locs(i).sigmaRatio = params.sigmax./params.sigmay;
                         
-                        a = obj.Microscope.virtualPixelSize*1e-9;
+                        a = obj.Microscope.virtualPixelSize;
                         s = a*(locs(i).sigmax + locs(i).sigmay)/2;
                         b = locs(i).bkgnd;
                         N = locs(i).photons;
                         [uncertainty_xy, uncertainty_photons] = obj.getThompsonUncertainty(s,a,b,N);
                         locs(i).uncertainty_xy = uncertainty_xy;
                         locs(i).uncertainty_photons = uncertainty_photons;
+
+                        % get orientation estimate from orientation fit
+                        angleGaus = locs(i).rot;
+                        angleGaus(locs(i).sigmax./locs(i).sigmay > 1) = angleGaus(locs(i).sigmax./locs(i).sigmay > 1) + pi/2;
+                        angleGaus = (angleGaus - pi/2)*180/pi;
+                        angleGaus(angleGaus < - 90) = angleGaus(angleGaus < - 90) + 180;
+                        locs(i).angleGaus = angleGaus*pi/180;
+
                     end
-%                     % get orientation estimate from orientation fit
-%                     angleGaus = locs.rot;
-%                     angleGaus(locs.sigmax./locs.sigmay > 1) = angleGaus(locs.sigmax./locs.sigmay > 1) + pi/2;
-%                     angleGaus = (angleGaus - pi/2)*180/pi;
-%                     angleGaus(angleGaus < - 90) = angleGaus(angleGaus < - 90) + 180;
-%                     locs(i).angleGaus = angleGaus*pi/180;
                     
                 otherwise; fprintf('Unexpected value for "method" in function "fit2Dlocalisations".')
             end
