@@ -451,11 +451,11 @@ classdef Process
             B = (1/8)*cos(alpha) - (1/8)*cos(alpha)^3;
             C = (7/48) - (1/16)*cos(alpha) - (1/16)*cos(alpha)^2 - (1/48)*cos(alpha)^3;
         end
-        
+
     end
     
     methods (Static)
-        
+
         function Vq = interpolatePolarisationChannel(img,mask,interpolationMethod)
             %INTERPOLATEPOLARISATIONCHANNEL
             % get pixels from channel and make meshgrid
