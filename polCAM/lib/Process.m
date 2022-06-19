@@ -417,7 +417,7 @@ classdef Process
                         locs(i).photons = (2*pi*params.amplitude.*params.sigmax.*params.sigmay)/2;
                         locs(i).sigmaRatio = params.sigmax./params.sigmay;
                         
-                        a = obj.Microscope.virtualPixelSize;
+                        a = obj.Microscope.virtualPixelSize*1e-9;
                         s = a*(locs(i).sigmax + locs(i).sigmay)/2;
                         b = locs(i).bkgnd;
                         N = locs(i).photons;
