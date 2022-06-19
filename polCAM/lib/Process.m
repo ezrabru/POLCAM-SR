@@ -10,7 +10,6 @@ classdef Process
         localisationParams % localisation parameters
         
         border
-        maxCandidates
         
         alpha
         A
@@ -29,7 +28,6 @@ classdef Process
             obj.localisationParams = localisationParams;
             
             obj.border = max([localisationParams.w.xy,localisationParams.w.phi,localisationParams.w.theta]) + 1;
-            obj.maxCandidates = (obj.Camera.imgSize(1)*obj.Camera.imgSize(2))/10; % frame will be skipped if more than this number of localisation candidates is found (happens with empty frames...)
 
             [obj.alpha,obj.A,obj.B,obj.C] = obj.getConstantsForThetaCalculation;
         end
@@ -326,23 +324,22 @@ classdef Process
 
             % find local maxima (localisation candidates)
             DoG(DoG < obj.localisationParams.DoGminThreshold) = 0;
-            BW = imregionalmax(DoG);
-            [x,y] = find(BW); % get coordinates of local maxima
-            
-            % remove candidates that are too close to image borders
-            keep_x = (x > obj.border).*(x < obj.Camera.imgSizeEven(1) - obj.border);
-            keep_y = (y > obj.border).*(y < obj.Camera.imgSizeEven(2) - obj.border);
-            keep = logical(keep_x.*keep_y);
-            x = x(keep);
-            y = y(keep);
-            clc
-
-            if numel(x) > obj.maxCandidates
+            if all(DoG == 0) % if everything was below the threshold
                 x = [];
                 y = [];
+            else
+                BW = imregionalmax(DoG);
+                [x,y] = find(BW); % get coordinates of local maxima
+                
+                % remove candidates that are too close to image borders
+                keep_x = (x > obj.border).*(x < obj.Camera.imgSizeEven(1) - obj.border);
+                keep_y = (y > obj.border).*(y < obj.Camera.imgSizeEven(2) - obj.border);
+                keep = logical(keep_x.*keep_y);
+                x = x(keep);
+                y = y(keep);
             end
-
         end
+
         
         function locs = fit2Dlocalisations(obj,img,x,y)
             % FIT2DLOCALISATIONS
