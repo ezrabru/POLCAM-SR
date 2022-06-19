@@ -1,0 +1,87 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="4153828028" file="C:\Users\ezrab\Desktop\20220307_0950_PolCamSMOLMAppOO\polCAM Live\polCAM Live.prj" location="C:\Users\ezrab\Desktop\20220307_0950_PolCamSMOLMAppOO\polCAM Live" name="polCAM Live" target="target.mlapps" target-name="Package App">
+    <param.appname>polCAM Live</param.appname>
+    <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
+    <param.email>eb758@cam.ac.uk</param.email>
+    <param.company>Chemistry Dept., University of Cambridge</param.company>
+    <param.icon>${PROJECT_ROOT}\polCAM Live_resources\icon_24.png</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\polCAM Live_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\polCAM Live_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\polCAM Live_resources\icon_16.png</file>
+    </param.icons>
+    <param.summary />
+    <param.description />
+    <param.screenshot>C:\Users\ezrab\AppData\Local\Temp\tp75462314_8e61_4414_8f16_46c1e6bca10c.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>999c941c-c1bf-4c85-815b-3815086b0ff1</param.guid>
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\polCAMLive.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\dialog apps\DialogAppDoubleSlider.mlapp</file>
+      <file>${PROJECT_ROOT}\dialog apps\DialogAppImgData.mlapp</file>
+      <file>${PROJECT_ROOT}\dialog apps\DialogAppSettingsDiffractionLimited.mlapp</file>
+      <file>${PROJECT_ROOT}\dialog apps\DialogAppSingleSlider.mlapp</file>
+      <file>${PROJECT_ROOT}\lib\Camera.m</file>
+      <file>${PROJECT_ROOT}\lib\Microscope.m</file>
+      <file>${PROJECT_ROOT}\lib\Process.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\ezrab\Desktop\20220307_0950_PolCamSMOLMAppOO" name="polCAM Live" optional="false">C:\Users\ezrab\Desktop\20220307_0950_PolCamSMOLMAppOO\polCAM Live</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2021b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="gpucoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
