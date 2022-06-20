@@ -1,11 +1,9 @@
-function fig = plotLocalisationRateVsTime(locData,figureParams)
+function fig = plotLocalisationRateVsTime(locData,figureParams,windowAverage)
 
 fontsize = figureParams.FontSize;
 theme    = figureParams.Theme;
 
 lw = 1.5; % linewidth
-
-windowAverage = 100; % number of frames for rolling average smoothing
 
 keep = logical(locData.filter);
 frame = locData.frameGrouped(keep);
@@ -25,13 +23,14 @@ switch theme
 
     case 'light'
         plot(xData,yData,'k','LineWidth',lw);
-
+        title(sprintf('k = %d frames rolling average',windowAverage),'FontWeight','Normal')
+        grid on
     case 'dark'
         plot(xData,yData,'w','LineWidth',lw);
+        title(sprintf('k = %d frames rolling average',windowAverage),'FontWeight','Normal','Color','w')
         set(gca,'Color','k','XColor','w','YColor','w')
         set(gcf,'Color','k'); grid on
 end
-title(sprintf('k = %d frames rolling average',windowAverage),'FontWeight','Normal','Color','w')
 xlabel('Frame');
 ylabel({'Localisation rate','(locs/frame)'});
 set(gca,'fontsize',fontsize)
