@@ -70,6 +70,12 @@ switch columnName
         scatter(y,x,ms,data,'.');
         caxis([prctile(data,1) prctile(data,99)])
         c = colorbar; c.Label.String = 'Thompson uncertainty xy (nm)';
+    case 'Cluster id'
+        data = locData.cluster_id; data = data(keep);
+        scatter(y,x,ms,data,'.');
+        caxis([min(data(:)) max(data(:))])
+        c = colorbar; colormap lines;
+        c.Label.String = 'Cluster id';
 end
 
 % communal figure settings

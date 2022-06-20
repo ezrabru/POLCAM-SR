@@ -74,6 +74,16 @@ switch columnName
         scatter(y,x,ms,mcol,'.');
         c = colorbar; colormap("hsv"); caxis([-90 90]); c.Ticks = -90:30:90;
         c.Label.String = 'Angle rotated asym gaussian (deg.)';
+    case 'Frames bound'
+        data = locData.len; data = data(keep);
+        scatter(y,x,ms,data,'.');
+        caxis([1 prctile(data,99)])
+        c = colorbar; c.Label.String = 'Number of frames bound';
+    case 'Cluster id'
+        data = locData.cluster_id; data = data(keep);
+        scatter(y,x,ms,data,'.');
+        caxis([min(data(:)) max(data(:))])
+        c = colorbar; c.Label.String = 'Cluster id';
 end
 
 % communal figure settings

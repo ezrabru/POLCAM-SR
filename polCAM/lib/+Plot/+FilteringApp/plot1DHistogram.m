@@ -83,6 +83,11 @@ switch columnName
         binEdges = -90:2:90;
         histogram(data,binEdges,'FaceColor',facecolor,'EdgeColor','none','FaceAlpha',1);
         xlabel('Angle rotated asym gaussian (deg.)');
+    case 'Frames bound'
+        data = locData.len; data = data(keep);
+        binEdges = 1:max(data(:));
+        histogram(data,binEdges,'FaceColor',facecolor,'EdgeColor','none','FaceAlpha',1);
+        xlabel('Number of frames bound');
 end
 
 xlim([-inf inf]);

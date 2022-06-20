@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1386241912" file="C:\Users\ezrab\Documents\GitHub\polCAM\polCAM\polCAM.prj" location="C:\Users\ezrab\Documents\GitHub\polCAM\polCAM" name="polCAM" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1968721183" file="C:\Users\ezrab\Documents\GitHub\polCAM\polCAM\polCAM.prj" location="C:\Users\ezrab\Documents\GitHub\polCAM\polCAM" name="polCAM" target="target.mlapps" target-name="Package App">
     <param.appname>polCAM</param.appname>
     <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
     <param.email>eb758@cam.ac.uk</param.email>
@@ -12,7 +12,7 @@
     </param.icons>
     <param.summary />
     <param.description />
-    <param.screenshot>C:\Users\ezrab\AppData\Local\Temp\tpad0735ef_1117_4564_927c_984143633cfe.png</param.screenshot>
+    <param.screenshot>C:\Users\ezrab\AppData\Local\Temp\tp94fb455a_b7ab_4b00_9345_db17904850f4.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -51,9 +51,10 @@
       <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plot1DHistogram.m</file>
       <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plot2DHistogram.m</file>
       <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plotScatterPlot.m</file>
-      <file>${PROJECT_ROOT}\lib\+Temporal\groupLocalisations.m</file>
-      <file>${PROJECT_ROOT}\lib\+Temporal\temporalGrouping.m</file>
-      <file>${PROJECT_ROOT}\lib\+Temporal\temporalLinking.m</file>
+      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Clustering\cluster_dbscan.m</file>
+      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\groupLocalisations.m</file>
+      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\temporalGrouping.m</file>
+      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\temporalLinking.m</file>
       <file>${PROJECT_ROOT}\lib\+Utils\getAverageIntensityProjectionFromPath.m</file>
       <file>${PROJECT_ROOT}\lib\+Utils\getMaximumIntensityProjectionFromPath.m</file>
       <file>${PROJECT_ROOT}\lib\+Utils\getMinimumIntensityProjectionFromPath.m</file>
@@ -66,6 +67,7 @@
     </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\docs</file>
+      <file>${PROJECT_ROOT}\plugins</file>
     </fileset.resources>
     <fileset.package />
     <build-deliverables>

@@ -81,6 +81,11 @@ switch columnName1
         data1 = data1(keep);
         nameParam1 = 'Angle rotated asym gaussian (deg.)';
         xEdges = -90:2:90;
+    case 'Frames bound'
+        data1 = locData.len;
+        data1 = data1(keep);
+        xEdges = 1:max(data1(:));
+        nameParam1 = 'Number of frames bound';
 end
 
 switch columnName2
@@ -157,6 +162,11 @@ switch columnName2
         data2 = data2(keep);
         nameParam2 = 'Angle rotated asym gaussian (deg.)';
         yEdges = -90:2:90;
+    case 'Frames bound'
+        data2 = locData.len;
+        data2 = data2(keep);
+        yEdges = 1:max(data2(:));
+        nameParam2 = 'Number of frames bound';
 end
 
 histogram2(data1,data2,xEdges,yEdges,'DisplayStyle','tile')%,'ShowEmptyBins','on')
