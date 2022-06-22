@@ -1,0 +1,34 @@
+{
+  "localisationSettings": {
+    "Calibration": {
+      "pixDependent": false,
+      "offset": 100,
+      "gain": 0.42
+    },
+    "BkgndEstimation": {
+      "method": "None",
+      "kernel": 1
+    },
+    "SetupParams": {
+      "NA": 1.49,
+      "RI": 1.518,
+      "QE": 0.7,
+      "camPixSize_um": 3.45,
+      "totalMagnification": 50
+    },
+    "ChannelInterp": {
+      "mosaicUnit": "[-45 0; 90 45]",
+      "method": "Interpolation (cubic spline, recommended)"
+    },
+    "Localisation": {
+      "DoGsigma1": 2,
+      "DoGsigma2": 5,
+      "DoGthresh": 5,
+      "fittingAlgorithm": "Rotated asymmetric Gaussian (recommended)",
+      "w_xy": 7,
+      "w_phi": 3,
+      "w_theta": 7,
+      "parallelProc": true
+    }
+  }
+}
