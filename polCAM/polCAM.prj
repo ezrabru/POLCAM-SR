@@ -1,19 +1,19 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1968721183" file="C:\Users\ezrab\Documents\GitHub\polCAM\polCAM\polCAM.prj" location="C:\Users\ezrab\Documents\GitHub\polCAM\polCAM" name="polCAM" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1521477049" file="/Users/ezrabruggeman/Documents/GitHub/polCAM/polCAM/polCAM.prj" location="/Users/ezrabruggeman/Documents/GitHub/polCAM/polCAM" name="polCAM" target="target.mlapps" target-name="Package App">
     <param.appname>polCAM</param.appname>
     <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
     <param.email>eb758@cam.ac.uk</param.email>
-    <param.company>Chemistry Dept., University of Cambridge</param.company>
-    <param.icon>${PROJECT_ROOT}\polCAM_resources\icon_24.png</param.icon>
+    <param.company>Lee Lab, University of Cambridge</param.company>
+    <param.icon>${PROJECT_ROOT}/polCAM_resources/icon_24.png</param.icon>
     <param.icons>
-      <file>${PROJECT_ROOT}\polCAM_resources\icon_48.png</file>
-      <file>${PROJECT_ROOT}\polCAM_resources\icon_24.png</file>
-      <file>${PROJECT_ROOT}\polCAM_resources\icon_16.png</file>
+      <file>${PROJECT_ROOT}/polCAM_resources/icon_48.png</file>
+      <file>${PROJECT_ROOT}/polCAM_resources/icon_24.png</file>
+      <file>${PROJECT_ROOT}/polCAM_resources/icon_16.png</file>
     </param.icons>
     <param.summary />
     <param.description />
-    <param.screenshot>C:\Users\ezrab\AppData\Local\Temp\tp94fb455a_b7ab_4b00_9345_db17904850f4.png</param.screenshot>
-    <param.version>1.0</param.version>
+    <param.screenshot>/private/var/folders/6j/9pmd1ms95nn1t7d0_vmbff240000gn/T/tp2e5bbd8e_f4c4_4359_8c57_588a1a86aecc.png</param.screenshot>
+    <param.version>1.1</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
@@ -26,7 +26,6 @@
       <param.company />
       <param.summary />
       <param.description />
-      <param.version />
       <param.products.name />
       <param.products.id />
       <param.products.version />
@@ -34,76 +33,63 @@
       <param.output />
     </unset>
     <fileset.main>
-      <file>${PROJECT_ROOT}\polCAM.mlapp</file>
+      <file>${PROJECT_ROOT}/polCAM.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppDriftCorrection.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppFiltering.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppImgDataDiffractionLimited.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppImgDataSingleMolecule.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppLocalisation.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppSettingsDiffractionLimited.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\figures\DialogAppScatter.mlapp</file>
-      <file>${PROJECT_ROOT}\lib\+Drift\correctDriftMMC.m</file>
-      <file>${PROJECT_ROOT}\lib\+Drift\correctDriftRCC.m</file>
-      <file>${PROJECT_ROOT}\lib\+Plot\+AnalyseMenu\plotLocalisationRateVsTime.m</file>
-      <file>${PROJECT_ROOT}\lib\+Plot\+AnalyseMenu\plotSummaryHistograms.m</file>
-      <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plot1DHistogram.m</file>
-      <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plot2DHistogram.m</file>
-      <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plotScatterPlot.m</file>
-      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Clustering\cluster_dbscan.m</file>
-      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\groupLocalisations.m</file>
-      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\temporalGrouping.m</file>
-      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\temporalLinking.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\getAverageIntensityProjectionFromPath.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\getMaximumIntensityProjectionFromPath.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\getMinimumIntensityProjectionFromPath.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\getOrderedImageFilelist.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\getSumIntensityProjectionFromPath.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\readTiffStack.m</file>
-      <file>${PROJECT_ROOT}\lib\Camera.m</file>
-      <file>${PROJECT_ROOT}\lib\Microscope.m</file>
-      <file>${PROJECT_ROOT}\lib\Process.m</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppDriftCorrection.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppFiltering.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppImgDataDiffractionLimited.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppImgDataSingleMolecule.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppLocalisation.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppSettingsDiffractionLimited.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/figures/DialogAppScatter.mlapp</file>
+      <file>${PROJECT_ROOT}/lib/+Drift/correctDriftMMC.m</file>
+      <file>${PROJECT_ROOT}/lib/+Drift/correctDriftRCC.m</file>
+      <file>${PROJECT_ROOT}/lib/+Plot/+AnalyseMenu/plotLocalisationRateVsTime.m</file>
+      <file>${PROJECT_ROOT}/lib/+Plot/+AnalyseMenu/plotSummaryHistograms.m</file>
+      <file>${PROJECT_ROOT}/lib/+Plot/+FilteringApp/plot1DHistogram.m</file>
+      <file>${PROJECT_ROOT}/lib/+Plot/+FilteringApp/plot2DHistogram.m</file>
+      <file>${PROJECT_ROOT}/lib/+Plot/+FilteringApp/plotScatterPlot.m</file>
+      <file>${PROJECT_ROOT}/lib/+Postprocessing/+Clustering/cluster_dbscan.m</file>
+      <file>${PROJECT_ROOT}/lib/+Postprocessing/+Temporal/groupLocalisations.m</file>
+      <file>${PROJECT_ROOT}/lib/+Postprocessing/+Temporal/temporalGrouping.m</file>
+      <file>${PROJECT_ROOT}/lib/+Postprocessing/+Temporal/temporalLinking.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getAverageIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getMaximumIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getMinimumIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getOrderedImageFilelist.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getSumIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/readTiffStack.m</file>
+      <file>${PROJECT_ROOT}/lib/Camera.m</file>
+      <file>${PROJECT_ROOT}/lib/Microscope.m</file>
+      <file>${PROJECT_ROOT}/lib/Process.m</file>
     </fileset.depfun>
     <fileset.resources>
-      <file>${PROJECT_ROOT}\docs</file>
-      <file>${PROJECT_ROOT}\plugins</file>
+      <file>${PROJECT_ROOT}/docs</file>
+      <file>${PROJECT_ROOT}/plugins</file>
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="C:\Users\ezrab\Documents\GitHub\polCAM" name="polCAM" optional="false">C:\Users\ezrab\Documents\GitHub\polCAM\polCAM</file>
+      <file location="/Users/ezrabruggeman/Documents/GitHub/polCAM" name="polCAM" optional="false">/Users/ezrabruggeman/Documents/GitHub/polCAM/polCAM</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2022a</root>
-      <toolboxes>
-        <toolbox name="matlabcoder" />
-        <toolbox name="gpucoder" />
-      </toolboxes>
-      <toolbox>
-        <matlabcoder>
-          <enabled>true</enabled>
-        </matlabcoder>
-      </toolbox>
-      <toolbox>
-        <gpucoder>
-          <enabled>true</enabled>
-        </gpucoder>
-      </toolbox>
+      <root>/Applications/MATLAB_R2021b.app</root>
+      <toolboxes />
     </matlab>
     <platform>
-      <unix>false</unix>
-      <mac>false</mac>
-      <windows>true</windows>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
       <win2k>false</win2k>
       <winxp>false</winxp>
       <vista>false</vista>
       <linux>false</linux>
       <solaris>false</solaris>
-      <osver>10.0</osver>
+      <osver>12.0.1</osver>
       <os32>false</os32>
       <os64>true</os64>
-      <arch>win64</arch>
+      <arch>maci64</arch>
       <matlab>true</matlab>
     </platform>
   </configuration>
