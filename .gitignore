@@ -4,3 +4,9 @@ polCAM/docs/samples/fibrils/results_filtered.mat
 polCAM/docs/samples/fibrils/results_filtered_filtered.mat
 localisationParameters.json
 batchProcessingTable.txt
+fibrils_NileRed_50ms_0_localisations.txt
+fibrils_NileRed_50ms_0_results.mat
+fibrils_NileRed_50ms_1_localisations.txt
+fibrils_NileRed_50ms_1_results.mat
+fibrils_NileRed_50ms_2_localisations.txt
+fibrils_NileRed_50ms_2_results.mat
