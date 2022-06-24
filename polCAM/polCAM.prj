@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="4128038899" file="/Users/ezrabruggeman/Documents/GitHub/polCAM/polCAM/polCAM.prj" location="/Users/ezrabruggeman/Documents/GitHub/polCAM/polCAM" name="polCAM" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3364169442" file="/Users/ezrabruggeman/Documents/GitHub/polCAM/polCAM/polCAM.prj" location="/Users/ezrabruggeman/Documents/GitHub/polCAM/polCAM" name="polCAM" target="target.mlapps" target-name="Package App">
     <param.appname>polCAM</param.appname>
     <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
     <param.email>eb758@cam.ac.uk</param.email>
@@ -12,7 +12,7 @@
     </param.icons>
     <param.summary />
     <param.description />
-    <param.screenshot>/private/var/folders/6j/9pmd1ms95nn1t7d0_vmbff240000gn/T/tp8c493efb_ba5b_4cab_b308_63000076fcf4.png</param.screenshot>
+    <param.screenshot>/private/var/folders/6j/9pmd1ms95nn1t7d0_vmbff240000gn/T/tp9399d8da_6a71_47cd_be45_7c06837e45ce.png</param.screenshot>
     <param.version>1.1</param.version>
     <param.products.name />
     <param.products.id />
