@@ -10,11 +10,11 @@
       "kernel": 1
     },
     "SetupParams": {
-      "NA": 1.49,
+      "NA": 1.4,
       "RI": 1.518,
       "QE": 0.7,
       "camPixSize_um": 3.45,
-      "totalMagnification": 50
+      "totalMagnification": 60
     },
     "ChannelInterp": {
       "mosaicUnit": "[-45 0; 90 45]",
