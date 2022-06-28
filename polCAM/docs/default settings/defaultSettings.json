@@ -10,7 +10,7 @@
       "kernel": 1
     },
     "SetupParams": {
-      "NA": 1.4,
+      "NA": 1.42,
       "RI": 1.518,
       "QE": 0.7,
       "camPixSize_um": 3.45,
@@ -30,5 +30,35 @@
       "w_theta": 7,
       "parallelProc": true
     }
+  },
+  "filteringSettings": {
+    "frame_min": 0,
+    "frame_max": "Inf",
+    "x_min": 0,
+    "x_max": "Inf",
+    "y_min": 0,
+    "y_max": "Inf",
+    "phi_min": -90,
+    "phi_max": 90,
+    "theta_min": 0,
+    "theta_max": 90,
+    "avgDoLP_min": 0,
+    "avgDoLP_max": 1,
+    "netDoLP_min": 0,
+    "netDoLP_max": 1,
+    "photons_min": 500,
+    "photons_max": "Inf",
+    "bkgnd_min": "-Inf",
+    "bkgnd_max": "Inf",
+    "sigmax_min": 0,
+    "sigmax_max": "Inf",
+    "sigmay_min": 0,
+    "sigmay_max": "Inf",
+    "uncertainty_xy_min": 0,
+    "uncertainty_xy_max": "Inf",
+    "framesBound_min": 1,
+    "framesBound_max": "Inf",
+    "clusterId_min": "-Inf",
+    "clusterId_max": "Inf"
   }
 }
