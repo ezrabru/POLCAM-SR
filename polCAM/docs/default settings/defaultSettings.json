@@ -2,19 +2,19 @@
   "localisationSettings": {
     "Calibration": {
       "pixDependent": false,
-      "offset": 100,
+      "offset": 0,
       "gain": 0.42
     },
     "BkgndEstimation": {
-      "method": "None",
+      "method": "Temporal minimum intensity projection + spatial median filter",
       "kernel": 1
     },
     "SetupParams": {
-      "NA": 1.42,
+      "NA": 1.49,
       "RI": 1.518,
       "QE": 0.7,
       "camPixSize_um": 3.45,
-      "totalMagnification": 60
+      "totalMagnification": 50
     },
     "ChannelInterp": {
       "mosaicUnit": "[-45 0; 90 45]",
@@ -23,7 +23,7 @@
     "Localisation": {
       "DoGsigma1": 2,
       "DoGsigma2": 5,
-      "DoGthresh": 5,
+      "DoGthresh": 40.052688953488378,
       "fittingAlgorithm": "Rotated asymmetric Gaussian (recommended)",
       "w_xy": 7,
       "w_phi": 3,
