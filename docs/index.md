@@ -5,7 +5,8 @@
 1. [Hardware](./hardware.md)
 2. [Software](./software.md)
 3. [Protocols](./protocols.md)
-4. [FAQs](./faqs.md)
+4. [Example data](./example_data.md)
+5. [FAQs](./faqs.md)
 
 If you use polCAM software in your work, please cite us:\
 [Link to manuscript]()\
