@@ -1,94 +1,77 @@
-<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR\POLCAM-SR.prj" location="C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR" name="POLCAM-SR" target="target.ezdeploy.standalone" target-name="Application Compiler">
-    <param.appname>POLCAM_SR</param.appname>
-    <param.icon>${PROJECT_ROOT}\POLCAM-SR_resources\icon.ico</param.icon>
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="2378703260" file="C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR\POLCAM-SR.prj" location="C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR" name="POLCAM-SR" target="target.mlapps" target-name="Package App">
+    <param.appname>POLCAM-SR</param.appname>
+    <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
+    <param.email>eb758@cam.ac.uk</param.email>
+    <param.company>Chemistry Dept., University of Cambridge</param.company>
+    <param.icon>${PROJECT_ROOT}\POLCAM-SR_resources\icon_24.png</param.icon>
     <param.icons>
       <file>${PROJECT_ROOT}\POLCAM-SR_resources\icon_48.png</file>
-      <file>${PROJECT_ROOT}\POLCAM-SR_resources\icon_32.png</file>
       <file>${PROJECT_ROOT}\POLCAM-SR_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\POLCAM-SR_resources\icon_16.png</file>
     </param.icons>
-    <param.version>1.0</param.version>
-    <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
-    <param.email>eb758@cam.ac.uk</param.email>
-    <param.company />
     <param.summary>Application to process single-molecule and diffraction-limited polarisation camera image data</param.summary>
     <param.description />
-    <param.screenshot />
-    <param.guid />
-    <param.installpath.string>\POLCAM_SR\</param.installpath.string>
-    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
-    <param.logo />
-    <param.install.notes />
-    <param.target.install.notes />
-    <param.intermediate>${PROJECT_ROOT}\POLCAM-SR\for_testing</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}\POLCAM-SR\for_redistribution_files_only</param.files.only>
-    <param.output>${PROJECT_ROOT}\POLCAM-SR\for_redistribution</param.output>
-    <param.logdir>${PROJECT_ROOT}\POLCAM-SR</param.logdir>
-    <param.enable.clean.build>false</param.enable.clean.build>
-    <param.user.defined.mcr.options />
-    <param.target.type>subtarget.standalone</param.target.type>
-    <param.support.packages />
-    <param.web.mcr>true</param.web.mcr>
-    <param.package.mcr>false</param.package.mcr>
-    <param.no.mcr>false</param.no.mcr>
-    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
-    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
-    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
-    <param.windows.command.prompt>true</param.windows.command.prompt>
-    <param.create.log>false</param.create.log>
-    <param.log.file />
-    <param.native.matlab>false</param.native.matlab>
-    <param.checkbox>false</param.checkbox>
-    <param.example />
-    <param.help.text>Syntax 
-	  -? 
-	 
- Input Arguments 
-	 -?  print help on how to use the application 
-	 input arguments</param.help.text>
+    <param.screenshot>C:\Users\ezrab\AppData\Local\Temp\tp858bcd79_fc1a_4d70_a700_6462764c2383.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>3ca57573-e808-419b-a9d1-a69815b1f65d</param.guid>
     <unset>
-      <param.version />
+      <param.authnamewatermark />
+      <param.email />
       <param.company />
       <param.description />
-      <param.screenshot />
-      <param.guid />
-      <param.installpath.string />
-      <param.installpath.combo />
-      <param.logo />
-      <param.install.notes />
-      <param.target.install.notes />
-      <param.intermediate />
-      <param.files.only />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
       <param.output />
-      <param.logdir />
-      <param.enable.clean.build />
-      <param.user.defined.mcr.options />
-      <param.target.type />
-      <param.support.packages />
-      <param.web.mcr />
-      <param.package.mcr />
-      <param.no.mcr />
-      <param.web.mcr.name />
-      <param.package.mcr.name />
-      <param.no.mcr.name />
-      <param.windows.command.prompt />
-      <param.create.log />
-      <param.log.file />
-      <param.native.matlab />
-      <param.checkbox />
-      <param.example />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\POLCAM_SR.mlapp</file>
     </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\dialog apps\DialogAppDriftCorrection.mlapp</file>
+      <file>${PROJECT_ROOT}\dialog apps\DialogAppFiltering.mlapp</file>
+      <file>${PROJECT_ROOT}\dialog apps\DialogAppImgDataDiffractionLimited.mlapp</file>
+      <file>${PROJECT_ROOT}\dialog apps\DialogAppImgDataSingleMolecule.mlapp</file>
+      <file>${PROJECT_ROOT}\dialog apps\DialogAppLocalisation.mlapp</file>
+      <file>${PROJECT_ROOT}\dialog apps\DialogAppSettingsDiffractionLimited.mlapp</file>
+      <file>${PROJECT_ROOT}\dialog apps\figures\DialogAppScatter.mlapp</file>
+      <file>${PROJECT_ROOT}\lib\+Drift\correctDriftMMC.m</file>
+      <file>${PROJECT_ROOT}\lib\+Drift\correctDriftRCC.m</file>
+      <file>${PROJECT_ROOT}\lib\+Plot\+AnalyseMenu\plotLocalisationRateVsTime.m</file>
+      <file>${PROJECT_ROOT}\lib\+Plot\+AnalyseMenu\plotSummaryHistograms.m</file>
+      <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plot1DHistogram.m</file>
+      <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plot2DHistogram.m</file>
+      <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plotScatterPlot.m</file>
+      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Clustering\cluster_dbscan.m</file>
+      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\groupLocalisations.m</file>
+      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\temporalGrouping.m</file>
+      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\temporalLinking.m</file>
+      <file>${PROJECT_ROOT}\lib\+Utils\getAverageIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}\lib\+Utils\getMaximumIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}\lib\+Utils\getMinimumIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}\lib\+Utils\getOrderedImageFilelist.m</file>
+      <file>${PROJECT_ROOT}\lib\+Utils\getSumIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}\lib\+Utils\readJsonFile.m</file>
+      <file>${PROJECT_ROOT}\lib\+Utils\readTiffStack.m</file>
+      <file>${PROJECT_ROOT}\lib\+Utils\sortFilesAscending.m</file>
+      <file>${PROJECT_ROOT}\lib\+Utils\writeJsonFile.m</file>
+      <file>${PROJECT_ROOT}\lib\Camera.m</file>
+      <file>${PROJECT_ROOT}\lib\Microscope.m</file>
+      <file>${PROJECT_ROOT}\lib\Process.m</file>
+      <file>${PROJECT_ROOT}\plugins\Plugin_batchProcessing.mlapp</file>
+    </fileset.depfun>
     <fileset.resources />
     <fileset.package />
-    <fileset.depfun />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\POLCAM-SR\for_testing" name="readme.txt" optional="true">C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR\POLCAM-SR\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\POLCAM-SR\for_testing" name="POLCAM_SR.exe" optional="false">C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR\POLCAM-SR\for_testing\POLCAM_SR.exe</file>
-      <file location="${PROJECT_ROOT}\POLCAM-SR\for_testing" name="splash.png" optional="false">C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR\POLCAM-SR\for_testing\splash.png</file>
+      <file location="C:\Users\ezrab\Documents\GitHub\POLCAM-SR" name="POLCAM-SR" optional="false">C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR</file>
     </build-deliverables>
     <workflow />
     <matlab>
