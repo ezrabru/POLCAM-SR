@@ -12,7 +12,7 @@ Software for processing single-molecule and diffraction limited polarisation cam
 
 ## Installation
 
-You can install `POLCAM-SR` as a standalone application. [Click here](https://github.com/ezrabru/POLCAM-SR/raw/main/POLCAM-SR_Installer.exe) to download the installer.
+You can install `POLCAM-SR` as a standalone application. [Click here](https://github.com/ezrabru/POLCAM-SR/raw/main/POLCAM-SR/POLCAM-SR/for_redistribution/MyAppInstaller_web.exe) to download the installer.
 
 ## Issues
 
