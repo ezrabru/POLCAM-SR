@@ -15,7 +15,7 @@ You can install `POLCAM-SR` as a standalone application. [Click here](https://gi
 
 ## Installation of full version
 
-1. Clone the git repository
+1. Clone the repository
 2. Run the file _POLCAM-SR/POLCAM-SR.mlapp_
 
 ## Issues
