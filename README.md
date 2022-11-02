@@ -1,10 +1,19 @@
-# polCAM
-Software to process single-molecule and diffraction-limited polarisation camera image data.
+# POLCAM-SR
 
-The latest installers for the polCAM and polCAM Live apps can always be found here:
-* [polCAM.mlappinstall](/polCAM/polCAM.mlappinstall)
-* [polCAM Live.mlappinstall](/polCAM%20Live/polCAM%20Live.mlappinstall)
+Software for processing single-molecule and diffraction limited polarisation camera image data.
 
 
+## Requirements
 
-Visit the [website](https://ezrabru.github.io/polCAM) for more information.
+1. MATLAB license (tested and developed using MATLAB R2022a)
+2. MATLAB Toolboxes: Parallel Computing, Optimization, Image processing, Curve fitting, Statistics and Machine Learning
+3. Mac or Windows
+
+
+## Installation
+
+You can install `POLCAM-SR` as a standalone application. [Click here](https://github.com/ezrabru/POLCAM-SR/raw/main/POLCAM-SR_Installer.exe) to download the installer.
+
+## Issues
+
+If you encounter any problems, please [file an issue](https://github.com/ezrabru/POLCAM-SR/issues) along with a detailed description.
