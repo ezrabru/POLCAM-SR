@@ -11,7 +11,7 @@ Software for processing single-molecule and diffraction limited polarisation cam
 
 ## Installation of MATLAB plugin version
 
-You can install `POLCAM-SR` as a MATLAB plugin. [Click here](https://github.com/ezrabru/POLCAM-SR/blob/main/POLCAM-SR/POLCAM-SR.mlappinstall) to download the installer.
+You can install `POLCAM-SR` as a MATLAB plugin. [Click here](https://github.com/ezrabru/POLCAM-SR/raw/main/POLCAM-SR/POLCAM-SR.mlappinstall) to download the installer.
 
 ## Installation of full version
 
