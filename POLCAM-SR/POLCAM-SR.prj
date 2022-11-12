@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2378703260" file="C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR\POLCAM-SR.prj" location="C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR" name="POLCAM-SR" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3677405846" file="C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR\POLCAM-SR.prj" location="C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR" name="POLCAM-SR" target="target.mlapps" target-name="Package App">
     <param.appname>POLCAM-SR</param.appname>
     <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
     <param.email>eb758@cam.ac.uk</param.email>
@@ -12,7 +12,7 @@
     </param.icons>
     <param.summary>Application to process single-molecule and diffraction-limited polarisation camera image data</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\ezrab\AppData\Local\Temp\tp858bcd79_fc1a_4d70_a700_6462764c2383.png</param.screenshot>
+    <param.screenshot>C:\Users\ezrab\AppData\Local\Temp\tp8618271a_0a47_43e5_ab35_0073f20729f7.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -68,7 +68,9 @@
       <file>${PROJECT_ROOT}\lib\Process.m</file>
       <file>${PROJECT_ROOT}\plugins\Plugin_batchProcessing.mlapp</file>
     </fileset.depfun>
-    <fileset.resources />
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\docs</file>
+    </fileset.resources>
     <fileset.package />
     <build-deliverables>
       <file location="C:\Users\ezrab\Documents\GitHub\POLCAM-SR" name="POLCAM-SR" optional="false">C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR</file>
