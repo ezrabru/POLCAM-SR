@@ -6,7 +6,7 @@
       "gain": 0.42
     },
     "BkgndEstimation": {
-      "method": "None",
+      "method": "Temporal minimum intensity projection + spatial median filter",
       "kernel": 1
     },
     "SetupParams": {
@@ -23,7 +23,7 @@
     "Localisation": {
       "DoGsigma1": 2,
       "DoGsigma2": 5,
-      "DoGthresh": 5.0763081395348841,
+      "DoGthresh": 5,
       "fittingAlgorithm": "Rotated asymmetric Gaussian (recommended)",
       "w_xy": 7,
       "w_phi": 3,
