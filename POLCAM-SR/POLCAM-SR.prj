@@ -1,19 +1,19 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="681357181" file="C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR\POLCAM-SR.prj" location="C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR" name="POLCAM-SR" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="185768682" file="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR/POLCAM-SR.prj" location="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR" name="POLCAM-SR" target="target.mlapps" target-name="Package App">
     <param.appname>POLCAM-SR</param.appname>
     <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
     <param.email>eb758@cam.ac.uk</param.email>
-    <param.company>Chemistry Dept., University of Cambridge</param.company>
-    <param.icon>${PROJECT_ROOT}\POLCAM-SR_resources\icon_24.png</param.icon>
+    <param.company>Lee Lab, University of Cambridge</param.company>
+    <param.icon>${PROJECT_ROOT}/POLCAM-SR_resources/icon_24.png</param.icon>
     <param.icons>
-      <file>${PROJECT_ROOT}\POLCAM-SR_resources\icon_48.png</file>
-      <file>${PROJECT_ROOT}\POLCAM-SR_resources\icon_24.png</file>
-      <file>${PROJECT_ROOT}\POLCAM-SR_resources\icon_16.png</file>
+      <file>${PROJECT_ROOT}/POLCAM-SR_resources/icon_48.png</file>
+      <file>${PROJECT_ROOT}/POLCAM-SR_resources/icon_24.png</file>
+      <file>${PROJECT_ROOT}/POLCAM-SR_resources/icon_16.png</file>
     </param.icons>
     <param.summary>Application to process single-molecule and diffraction-limited polarisation camera image data</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\ezrab\AppData\Local\Temp\tpbea13dd5_5d15_482d_bd63_9ee76bb76121.png</param.screenshot>
-    <param.version>1.0</param.version>
+    <param.screenshot>/private/var/folders/6j/9pmd1ms95nn1t7d0_vmbff240000gn/T/tpbb82acd0_cafa_4c52_965b_1432d2644690.png</param.screenshot>
+    <param.version>1.2</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
@@ -25,7 +25,6 @@
       <param.email />
       <param.company />
       <param.description />
-      <param.version />
       <param.products.name />
       <param.products.id />
       <param.products.version />
@@ -33,79 +32,66 @@
       <param.output />
     </unset>
     <fileset.main>
-      <file>${PROJECT_ROOT}\POLCAM_SR.mlapp</file>
+      <file>${PROJECT_ROOT}/POLCAM_SR.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppDriftCorrection.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppFiltering.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppImgDataDiffractionLimited.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppImgDataSingleMolecule.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppLocalisation.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\DialogAppSettingsDiffractionLimited.mlapp</file>
-      <file>${PROJECT_ROOT}\dialog apps\figures\DialogAppScatter.mlapp</file>
-      <file>${PROJECT_ROOT}\lib\+Drift\correctDriftMMC.m</file>
-      <file>${PROJECT_ROOT}\lib\+Drift\correctDriftRCC.m</file>
-      <file>${PROJECT_ROOT}\lib\+Plot\+AnalyseMenu\plotLocalisationRateVsTime.m</file>
-      <file>${PROJECT_ROOT}\lib\+Plot\+AnalyseMenu\plotSummaryHistograms.m</file>
-      <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plot1DHistogram.m</file>
-      <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plot2DHistogram.m</file>
-      <file>${PROJECT_ROOT}\lib\+Plot\+FilteringApp\plotScatterPlot.m</file>
-      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Clustering\cluster_dbscan.m</file>
-      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\groupLocalisations.m</file>
-      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\temporalGrouping.m</file>
-      <file>${PROJECT_ROOT}\lib\+Postprocessing\+Temporal\temporalLinking.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\getAverageIntensityProjectionFromPath.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\getMaximumIntensityProjectionFromPath.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\getMinimumIntensityProjectionFromPath.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\getOrderedImageFilelist.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\getSumIntensityProjectionFromPath.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\readJsonFile.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\readTiffStack.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\sortFilesAscending.m</file>
-      <file>${PROJECT_ROOT}\lib\+Utils\writeJsonFile.m</file>
-      <file>${PROJECT_ROOT}\lib\Camera.m</file>
-      <file>${PROJECT_ROOT}\lib\Microscope.m</file>
-      <file>${PROJECT_ROOT}\lib\Process.m</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppDriftCorrection.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppFiltering.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppImgDataDiffractionLimited.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppImgDataSingleMolecule.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppLocalisation.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/DialogAppSettingsDiffractionLimited.mlapp</file>
+      <file>${PROJECT_ROOT}/dialog apps/figures/DialogAppScatter.mlapp</file>
+      <file>${PROJECT_ROOT}/lib/+Drift/correctDriftMMC.m</file>
+      <file>${PROJECT_ROOT}/lib/+Drift/correctDriftRCC.m</file>
+      <file>${PROJECT_ROOT}/lib/+Plot/+AnalyseMenu/plotLocalisationRateVsTime.m</file>
+      <file>${PROJECT_ROOT}/lib/+Plot/+AnalyseMenu/plotSummaryHistograms.m</file>
+      <file>${PROJECT_ROOT}/lib/+Plot/+FilteringApp/plot1DHistogram.m</file>
+      <file>${PROJECT_ROOT}/lib/+Plot/+FilteringApp/plot2DHistogram.m</file>
+      <file>${PROJECT_ROOT}/lib/+Plot/+FilteringApp/plotScatterPlot.m</file>
+      <file>${PROJECT_ROOT}/lib/+Postprocessing/+Clustering/cluster_dbscan.m</file>
+      <file>${PROJECT_ROOT}/lib/+Postprocessing/+Temporal/groupLocalisations.m</file>
+      <file>${PROJECT_ROOT}/lib/+Postprocessing/+Temporal/temporalGrouping.m</file>
+      <file>${PROJECT_ROOT}/lib/+Postprocessing/+Temporal/temporalLinking.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getAverageIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getMaximumIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getMinimumIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getOrderedImageFilelist.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getSumIntensityProjectionFromPath.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/readJsonFile.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/readTiffStack.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/sortFilesAscending.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/writeJsonFile.m</file>
+      <file>${PROJECT_ROOT}/lib/Camera.m</file>
+      <file>${PROJECT_ROOT}/lib/Microscope.m</file>
+      <file>${PROJECT_ROOT}/lib/Process.m</file>
     </fileset.depfun>
     <fileset.resources>
-      <file>${PROJECT_ROOT}\docs</file>
-      <file>${PROJECT_ROOT}\plugins</file>
+      <file>${PROJECT_ROOT}/docs</file>
+      <file>${PROJECT_ROOT}/plugins</file>
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="C:\Users\ezrab\Documents\GitHub\POLCAM-SR" name="POLCAM-SR" optional="false">C:\Users\ezrab\Documents\GitHub\POLCAM-SR\POLCAM-SR</file>
+      <file location="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR" name="POLCAM-SR" optional="false">/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2022a</root>
-      <toolboxes>
-        <toolbox name="matlabcoder" />
-        <toolbox name="gpucoder" />
-      </toolboxes>
-      <toolbox>
-        <matlabcoder>
-          <enabled>true</enabled>
-        </matlabcoder>
-      </toolbox>
-      <toolbox>
-        <gpucoder>
-          <enabled>true</enabled>
-        </gpucoder>
-      </toolbox>
+      <root>/Applications/MATLAB_R2021b.app</root>
+      <toolboxes />
     </matlab>
     <platform>
-      <unix>false</unix>
-      <mac>false</mac>
-      <windows>true</windows>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
       <win2k>false</win2k>
       <winxp>false</winxp>
       <vista>false</vista>
       <linux>false</linux>
       <solaris>false</solaris>
-      <osver>10.0</osver>
+      <osver>12.6</osver>
       <os32>false</os32>
       <os64>true</os64>
-      <arch>win64</arch>
+      <arch>maci64</arch>
       <matlab>true</matlab>
     </platform>
   </configuration>
