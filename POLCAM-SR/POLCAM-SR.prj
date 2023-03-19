@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="116895304" file="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR/POLCAM-SR.prj" location="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR" name="POLCAM-SR" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3887477477" file="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR/POLCAM-SR.prj" location="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR" name="POLCAM-SR" target="target.mlapps" target-name="Package App">
     <param.appname>POLCAM-SR</param.appname>
     <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
     <param.email>eb758@cam.ac.uk</param.email>
@@ -12,8 +12,8 @@
     </param.icons>
     <param.summary>Application to process single-molecule and diffraction-limited polarisation camera image data</param.summary>
     <param.description />
-    <param.screenshot>/private/var/folders/6j/9pmd1ms95nn1t7d0_vmbff240000gn/T/tp518e3002_4d6b_40f9_a0a4_506ae2310bfb.png</param.screenshot>
-    <param.version>1.2</param.version>
+    <param.screenshot>/private/var/folders/6j/9pmd1ms95nn1t7d0_vmbff240000gn/T/tp4d826ad8_365a_47b5_a645_bd57c593f95b.png</param.screenshot>
+    <param.version>1.1</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
