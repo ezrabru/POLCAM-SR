@@ -22,6 +22,7 @@ You can install `POLCAM-SR` as a MATLAB plugin. [Click here](https://github.com/
 ## Issues
 
 If you encounter any problems, please [file an issue](https://github.com/ezrabru/POLCAM-SR/issues) along with a detailed description.
+Please also do not hesitate to email us at eb758@cam.ac.uk with any question about the use or installation of the software.
 
 ## Citing POLCAM-SR
 
