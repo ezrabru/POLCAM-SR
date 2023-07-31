@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="4047185125" file="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR/POLCAM-SR.prj" location="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR" name="POLCAM-SR" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="593887742" file="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR/POLCAM-SR.prj" location="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR" name="POLCAM-SR" target="target.mlapps" target-name="Package App">
     <param.appname>POLCAM-SR</param.appname>
     <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
     <param.email>eb758@cam.ac.uk</param.email>
@@ -11,9 +11,9 @@
       <file>${PROJECT_ROOT}/POLCAM-SR_resources/icon_16.png</file>
     </param.icons>
     <param.summary>Application to process single-molecule and diffraction-limited polarisation camera image data</param.summary>
-    <param.description />
-    <param.screenshot>/private/var/folders/6j/9pmd1ms95nn1t7d0_vmbff240000gn/T/tpf8aa7ce1_c2fb_44b5_a603_61d43a037f70.png</param.screenshot>
-    <param.version>1.2</param.version>
+    <param.description>Process single-molecule and diffraction-limited polarisation camera data</param.description>
+    <param.screenshot>/private/var/folders/6j/9pmd1ms95nn1t7d0_vmbff240000gn/T/tp5fcb071b_fce0_4f70_936f_97e7dfa348c7.png</param.screenshot>
+    <param.version>1.1.1</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
@@ -24,7 +24,6 @@
       <param.authnamewatermark />
       <param.email />
       <param.company />
-      <param.description />
       <param.products.name />
       <param.products.id />
       <param.products.version />
@@ -56,7 +55,8 @@
       <file>${PROJECT_ROOT}/lib/+Utils/getAverageIntensityProjectionFromPath.m</file>
       <file>${PROJECT_ROOT}/lib/+Utils/getMaximumIntensityProjectionFromPath.m</file>
       <file>${PROJECT_ROOT}/lib/+Utils/getMinimumIntensityProjectionFromPath.m</file>
-      <file>${PROJECT_ROOT}/lib/+Utils/getOrderedImageFilelist.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getOrderedImageFilelist_MicroManager.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/getOrderedImageFilelist_ThorCam.m</file>
       <file>${PROJECT_ROOT}/lib/+Utils/getSumIntensityProjectionFromPath.m</file>
       <file>${PROJECT_ROOT}/lib/+Utils/readJsonFile.m</file>
       <file>${PROJECT_ROOT}/lib/+Utils/readTiffStack.m</file>
