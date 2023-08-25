@@ -1,4 +1,4 @@
-function [x,y,dx,dy] = correctDriftRCC(frame,x,y,filter,segmentation,pixelsize_hist)
+function [x,y,dx_spline,dy_spline,dx,dy] = correctDriftRCC(frame,x,y,filter,segmentation,pixelsize_hist)
 
 % select only filtered localisations for drift correction
 frame_filter = frame(filter);
@@ -8,6 +8,8 @@ y_filter     = y(filter);
 frame_filter = frame_filter - min(frame_filter) + 1;
 numFrames    = max(frame_filter);
 numSegments  = floor(numFrames/segmentation);
+
+%%
 
 % Get edges for 2d histogram rendering
 xEdges = min(x_filter)-pixelsize_hist:pixelsize_hist:max(x_filter)+pixelsize_hist;
@@ -65,10 +67,6 @@ for i=2:numSegments
     x_peak_subpix = x_centroid - (w+1);
     y_peak_subpix = y_centroid - (w+1);
     
-    % % pixel-resolution
-    % corr_offset = [(xpeak-size(segment2,2)) 
-    %                (ypeak-size(segment2,1))];
-
     % sub-pixel resolution
     corr_offset = [((xpeak + x_peak_subpix) - size(segment2,2)) 
                    ((ypeak + y_peak_subpix) - size(segment2,1))];
@@ -82,23 +80,19 @@ end
 dx = -cumsum(dx);
 dy = -cumsum(dy);
 
+% interpolate drift
+t_segment = (0:numSegments-1)'*segmentation;
+t_interp = 0:(numSegments*segmentation-1);
+dx_spline = spline(t_segment,dx,t_interp);
+dy_spline = spline(t_segment,dy,t_interp);
+
 % Undo calculated drift
 x_driftCorrected = zeros(size(x));
 y_driftCorrected = zeros(size(y));
-for i=1:numSegments
-    if i < numSegments
-        lb = (i-1)*segmentation; % first frame substack
-        ub = i*segmentation; % last frame substack
-        keep = logical((frame > lb).*(frame < ub));
-        x_driftCorrected(keep) = x(keep) - dx(i);
-        y_driftCorrected(keep) = y(keep) - dy(i);
-    else
-        lb = (i-1)*segmentation; % first frame substack
-        keep = logical((frame > lb));
-        x_driftCorrected(keep) = x(keep) - dx(i);
-        y_driftCorrected(keep) = y(keep) - dy(i);
-    end
-
+for i=1:numSegments*segmentation
+    idx = logical(frame == i);
+    x_driftCorrected(idx) = x(idx) - dx_spline(i);
+    y_driftCorrected(idx) = y(idx) - dy_spline(i);
 end
 
 x = x_driftCorrected;
