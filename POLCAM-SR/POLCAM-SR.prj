@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1671076407" file="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR/POLCAM-SR.prj" location="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR" name="POLCAM-SR" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1958843674" file="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR/POLCAM-SR.prj" location="/Users/ezrabruggeman/Documents/GitHub/POLCAM-SR/POLCAM-SR" name="POLCAM-SR" target="target.mlapps" target-name="Package App">
     <param.appname>POLCAM-SR</param.appname>
     <param.authnamewatermark>Ezra Bruggeman</param.authnamewatermark>
     <param.email>eb758@cam.ac.uk</param.email>
@@ -12,8 +12,8 @@
     </param.icons>
     <param.summary>Application to process single-molecule and diffraction-limited polarisation camera image data</param.summary>
     <param.description>Process single-molecule and diffraction-limited polarisation camera data</param.description>
-    <param.screenshot>/private/var/folders/6j/9pmd1ms95nn1t7d0_vmbff240000gn/T/tpbac4b73a_95f9_4dae_8f03_79497799f656.png</param.screenshot>
-    <param.version>1.1.2</param.version>
+    <param.screenshot>/private/var/folders/6j/9pmd1ms95nn1t7d0_vmbff240000gn/T/tp4cd374a2_bde5_41dc_9102_e990c6d5b85a.png</param.screenshot>
+    <param.version>1.2</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
@@ -52,6 +52,7 @@
       <file>${PROJECT_ROOT}/lib/+Postprocessing/+Temporal/groupLocalisations.m</file>
       <file>${PROJECT_ROOT}/lib/+Postprocessing/+Temporal/temporalGrouping.m</file>
       <file>${PROJECT_ROOT}/lib/+Postprocessing/+Temporal/temporalLinking.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/+Colormaps/+cmocean/cmocean.m</file>
       <file>${PROJECT_ROOT}/lib/+Utils/getAverageIntensityProjectionFromPath.m</file>
       <file>${PROJECT_ROOT}/lib/+Utils/getMaximumIntensityProjectionFromPath.m</file>
       <file>${PROJECT_ROOT}/lib/+Utils/getMinimumIntensityProjectionFromPath.m</file>
@@ -62,6 +63,7 @@
       <file>${PROJECT_ROOT}/lib/+Utils/readTiffStack.m</file>
       <file>${PROJECT_ROOT}/lib/+Utils/sortFilesAscending.m</file>
       <file>${PROJECT_ROOT}/lib/+Utils/writeJsonFile.m</file>
+      <file>${PROJECT_ROOT}/lib/+Utils/writeTifStack.m</file>
       <file>${PROJECT_ROOT}/lib/Camera.m</file>
       <file>${PROJECT_ROOT}/lib/Microscope.m</file>
       <file>${PROJECT_ROOT}/lib/Process.m</file>
@@ -76,7 +78,7 @@
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>/Applications/MATLAB_R2021b.app</root>
+      <root>/Applications/MATLAB_R2023a.app</root>
       <toolboxes />
     </matlab>
     <platform>
