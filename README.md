@@ -6,7 +6,7 @@ The POLCAM-SR software is described in our [bioRxiv preprint](https://doi.org/10
 
 ## Requirements
 
-1. MATLAB license (tested and developed using MATLAB R2022a)
+1. MATLAB license (tested and developed using MATLAB R2023a)
 2. MATLAB Toolboxes: Parallel Computing, Optimization, Image processing, Curve fitting, Statistics and Machine Learning
 3. Mac or Windows
 
