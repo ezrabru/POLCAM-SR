@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/467032164.svg)](https://zenodo.org/doi/10.5281/zenodo.10732422)
+
 # POLCAM-SR
 
 Software for processing single-molecule and diffraction limited polarisation camera image data.
